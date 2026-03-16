@@ -2,6 +2,13 @@
 // CalcAnswer
 // Reads two numbers from the spreadsheet, applies a mathematical operation,
 // and saves the result to a Store field for use by the Scorer.
+// Requires two columns in spreadsheet each containing a list of input numbers.
+// After adding the component to a screen, bind 'Number 1' to one column 
+// and 'Number 2' to the other column.
+// Then select an operation (multiply/divide/add/subtract).
+// Then set a field in the store to save the output (i.e. what the correct response should be)
+// You can then set up a scorer component to use the output to determine
+// whether the participant made the correct response.
 //------------------------------------------------------------------------------
 import { registerSimple, registerEditor, component, ScreenComponent, ScreenComponentFactory, ProcessedResponse } from "@gorilla/compiled/task-builder.js";
 
